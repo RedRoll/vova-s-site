@@ -1,0 +1,142 @@
+/* css rules - google-fonts */
+
+/* font-family: 'Barlow Semi Condensed', sans-serif; - heading */
+
+/* font-family: 'Quattrocento Sans', sans-serif;  - text */ 
+
+
+
+
+
+/* WRAPPER */
+/* блок ограничивающий контент (оболочка) */
+.wrapper-car-site {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+
+/* HEADER */
+
+.car-site__header-sticky {
+    position: sticky;
+    
+    display: grid;
+    grid-template: 100px / 1fr 2fr 1fr;
+    
+}
+
+/* logo */
+
+.logo-left__img {
+    width: 300px;
+    height: 100px;
+}
+
+
+
+/* items inside header (grid elements) */
+
+.header-sticky__center {
+    align-self: end;
+    justify-self: center;  
+    position: relative;
+    left: 16%;
+}
+
+.center__links {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr; /*1 строка \ 3 колонки*/
+    column-gap: 20px;
+    font-size: 28px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+/* buttons inside CENTER BLOCK */
+
+.box__btn {
+    width: 100px;
+    height: 38px;
+    border: none;
+    border-radius: 3px; /*сглаживание углов кнопки*/
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    
+    transition: ease-out 0.4s; /*стиль и плавность самого перехода*/
+}
+
+.box__btn:hover {
+    box-shadow: inset 100px 0px 0px 0px rgb(255, 255, 255); /*при hover - наведении 
+    1 значение ставлю равной длинне самой кнопки (inset создает shadow ынутри кнопки)*/
+    color: black;
+    cursor: pointer;
+}
+
+/* hiden boxes inside buttons */
+
+.hidden-box-1 {
+    
+    display: none;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgba(121, 81, 145, 0.5);
+    text-align: center;
+    transition: opacity 1s linear;
+}
+
+/* social grid element */
+
+.header-sticky__right-about-us {
+    justify-self: end;
+    align-self: end;
+}
+
+.right-about-us__links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.icon-link__img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* MAIN BLOCK STYLES */
+
+
+.main {
+    margin-top: 100px;
+}
+
+/* SLIDE SHOW */
+
+
+.item__img {
+    display: block;
+    width: 100%;
+}
+
+/* слайдер */
+.slick-slider {}
+
+/* ограничивающая оболочка самого слайдера */
+.slick-list {
+    overflow: hidden; /*устанавливаю это свойство чтобы скрыть лишние части картинок (при активном одном 
+    активном слайде виден кусочек другого сладйа)*/
+}
+
+/* лента слайдов */
+.slick-track {
+    display: flex; /*выстраиваю элементы слайда с помощью flexbox*/
+}

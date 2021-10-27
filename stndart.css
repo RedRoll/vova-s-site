@@ -1,0 +1,21 @@
+/* margin/padding */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, p, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* links/lists */
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style-type: none;
+}
