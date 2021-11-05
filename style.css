@@ -65,8 +65,9 @@
     border: none;
     border-radius: 3px; /*сглаживание углов кнопки*/
     text-transform: uppercase;
-    color: white;
-    background-color: black;
+    color: black;
+    font-style: bold;
+    background-color: #39d4b2;
     
     transition: ease-out 0.4s; /*стиль и плавность самого перехода*/
 }
@@ -86,7 +87,7 @@
     width: 200px;
     height: 150px;
     border-radius: 5px;
-    background-color: rgba(121, 81, 145, 0.5);
+    background-color: #f8a55d;
     text-align: center;
     transition: opacity 1s linear;
 }
@@ -121,22 +122,87 @@
 
 /* SLIDE SHOW */
 
+.slide-show__item {
+    
+}
 
 .item__img {
     display: block;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
-/* слайдер */
+/* слайдер   */  
+/* ВАЖНО!!! все ниженаписанные классы были созданы файлом slick.min */
 .slick-slider {}
 
 /* ограничивающая оболочка самого слайдера */
 .slick-list {
     overflow: hidden; /*устанавливаю это свойство чтобы скрыть лишние части картинок (при активном одном 
     активном слайде виден кусочек другого сладйа)*/
+    /* owerflow управляет отображением содержания блочного елемента */
 }
 
 /* лента слайдов */
 .slick-track {
     display: flex; /*выстраиваю элементы слайда с помощью flexbox*/
+}
+
+/* CТРЕЛКИ СЛАЙДЕРА */
+
+.main__slide-show {
+    position: relative;
+}
+
+/* общие стили для стрелок */
+.main__slide-show .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10; /*повышаю z - index для того чтобы были видны кнопки, если этого не сделать они будут 
+    прятатся за самой картинкой*/
+    font-size: 0; /*для того чтобы убрать текст и заменить его в последствии на икоку*/
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+/* стиль для стрелки PREV */
+
+.main__slide-show .slick-prev {
+    left: 0;
+    background: url(ico/arrows/prev-arrow.svg) no-repeat;
+}
+
+
+/* стиль для стрелки NEXT */
+.main__slide-show .slick-next {
+    right: 0;
+    background: url(ico/arrows/next-arrow.svg);
+}
+
+/* ТОЧКИ ПОД СЛАЙДЕРОМ */
+
+.main__slide-show .slick-dots {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.main__slide-show .slick-dots li  {
+    margin: 20px 10px;
+    
+}
+
+.main__slide-show .slick-dots li button {
+    font-size: 0;
+    
+    border-color: orangered;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.main__slide-show .slick-dots .slick-active button {
+     background-color: silver;
 }
