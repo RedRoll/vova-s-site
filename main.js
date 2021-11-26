@@ -1,4 +1,5 @@
-// function for buttons
+// function for button 1
+
  $(function() {
     $(".box__btn-1").mouseenter(function(){
         if($(".hidden-box-1").is(":hidden")) {
@@ -13,7 +14,6 @@
         }
     });
 });
-
 
 // function for hidden block (hidden-box-1)
 
@@ -35,6 +35,81 @@ $(function() {
     
     
 });
+
+
+// hidden-box 2
+
+$(function() {
+    $(".box__btn-2").mouseenter(function(){
+        if($(".hidden-box-2").is(":hidden")) {
+            $(".hidden-box-2").slideDown(500); // 500 означает время - оно задает имеено плавное появление
+            // после duration можно написать еще одно значение - функию, котрая запустится после завершения анимации
+        }  
+                                       
+        else {
+            $(".box__btn-2, .hidden-box-2").mouseleave(function(){
+                $(".hidden-box-2").hide();
+            });
+        }
+    });
+});
+
+$(function() {
+    let boxBTN = '.hidden-box-2';  // сохраняю скрытый блок в переменной
+    let elementBoxBTN = $(boxBTN);  // перевожу вышенаписанную переменную в jQuery обьект (для того,
+    // чтобы этот скрытый блок можно было выбрать, тоесть взаимодействовать с ним через jQuery селлектор)
+    
+    elementBoxBTN.css({   // дальше задаю позиционирование для данного jQuery обьекта (скрытого блока)
+        position: "absolute",
+        top: 42,                                            
+        left: 70,
+        
+        
+    });
+    $(".hidden-box-2").mouseover(function() {
+        $(".hidden-box-2").show();            // запретить скрывать если указатель на блоке
+    });
+    
+    
+});
+
+// hidden-box 3
+
+$(function() {
+    $(".box__btn-3").mouseenter(function(){
+        if($(".hidden-box-3").is(":hidden")) {
+            $(".hidden-box-3").slideDown(500); // 500 означает время - оно задает имеено плавное появление
+            // после duration можно написать еще одно значение - функию, котрая запустится после завершения анимации
+        }  
+                                       
+        else {
+            $(".box__btn-3, .hidden-box-3").mouseleave(function(){
+                $(".hidden-box-3").hide();
+            });
+        }
+    });
+});
+
+$(function() {
+    let boxBTN = '.hidden-box-3';  // сохраняю скрытый блок в переменной
+    let elementBoxBTN = $(boxBTN);  // перевожу вышенаписанную переменную в jQuery обьект (для того,
+    // чтобы этот скрытый блок можно было выбрать, тоесть взаимодействовать с ним через jQuery селлектор)
+    
+    elementBoxBTN.css({   // дальше задаю позиционирование для данного jQuery обьекта (скрытого блока)
+        position: "absolute",
+        top: 42,                                            
+        right: -50,
+        
+        
+    });
+    $(".hidden-box-3").mouseover(function() {
+        $(".hidden-box-3").show();            // запретить скрывать если указатель на блоке
+    });
+    
+    
+});
+
+
 
 
 // продолжать писать и решать возникающие проблемы, поиграться еще с ищезновением

@@ -81,7 +81,7 @@
 
 /* hiden boxes inside buttons */
 
-.hidden-box-1 {
+.hidden-box-1, .hidden-box-2, .hidden-box-3 {
     
     display: none;
     width: 200px;
@@ -91,6 +91,7 @@
     text-align: center;
     transition: opacity 1s linear;
 }
+
 
 /* social grid element */
 
