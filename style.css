@@ -4,27 +4,28 @@
 
 /* font-family: 'Quattrocento Sans', sans-serif;  - text */ 
 
-
-
+body {
+    min-width: 1300px;
+}
 
 
 /* WRAPPER */
 /* блок ограничивающий контент (оболочка) */
 .wrapper-car-site {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     position: relative;
-   
+    background-color: #ffffff;
+    padding: 0 20px;
 }
 
 
 /* HEADER */
 
 .car-site__header-sticky {
-    position: sticky;
-    
+    padding-top: 20px;
     display: grid;
-    grid-template: 100px / 1fr 2fr 1fr;
+    grid-template: 100px / 1fr 2fr;
     
 }
 
@@ -48,7 +49,7 @@
 
 .center__links {
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr; /*1 строка \ 3 колонки*/
+    grid-template: 1fr / 1fr 1fr 1fr 1fr; /*1 строка \ 3 колонки*/
     column-gap: 20px;
     font-size: 28px;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -82,7 +83,7 @@
 /* hiden boxes inside buttons */
 
 .hidden-box-1, .hidden-box-2, .hidden-box-3 {
-    
+    z-index: 10;
     display: none;
     width: 200px;
     height: 150px;
@@ -100,17 +101,7 @@
     align-self: end;
 }
 
-.right-about-us__links {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
 
-
-.icon-link__img {
-    width: 24px;
-    height: 24px;
-}
 
 
 
@@ -198,7 +189,7 @@
 .main__slide-show .slick-dots li button {
     font-size: 0;
     
-    border-color: orangered;
+    border-color: rgb(19, 18, 18);
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -207,3 +198,35 @@
 .main__slide-show .slick-dots .slick-active button {
      background-color: silver;
 }
+
+/* _________________________ FOOTER _______________________________________ */  
+
+.footer {
+    width: 100%;
+    
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* social */
+.footer__links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+    
+}
+
+.social-1, .social-2 {
+    margin-right: 20px;
+}
+
+
+
+.icon-link__img {
+    width: 24px;
+    height: 24px;
+}
+
