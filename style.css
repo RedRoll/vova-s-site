@@ -11,21 +11,24 @@ body {
 
 /* WRAPPER */
 /* блок ограничивающий контент (оболочка) */
-.wrapper-car-site {
+.container {
     width: 80%;
     margin: 0 auto;
-    position: relative;
-    background-color: #ffffff;
-    padding: 0 20px;
+    
 }
 
 
 /* HEADER */
 
 .car-site__header-sticky {
+    border-bottom: 3px solid rgb(253, 150, 68);
+    padding-bottom: 10px;
+}
+
+.header-sticky-inner {
     padding-top: 20px;
     display: grid;
-    grid-template: 100px / 1fr 2fr;
+    grid-template: 100px / 1fr 2fr 0.5fr;
     
 }
 
@@ -44,7 +47,7 @@ body {
     align-self: end;
     justify-self: center;  
     position: relative;
-    left: 16%;
+    /* left: 16%; */
 }
 
 .center__links {
@@ -54,6 +57,35 @@ body {
     font-size: 28px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
+}
+
+/* call-us (item inside header) */
+
+.header-sticky__call-us {
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.box__call-modified {
+    margin-right: 15px;
+}
+
+/* font awesome icons */
+
+.fa-phone-volume, .fa-skype {
+    color: #33b99c;
+    font-size: 24px;
+}
+
+.fa-phone-volume:hover {
+    color: black;
+}
+
+.fa-skype:hover {
+    color: black;
 }
 
 
@@ -202,7 +234,8 @@ body {
 /* _________________________ FOOTER _______________________________________ */  
 
 .footer {
-    width: 100%;
+    background-color: rgb(253, 150, 68);
+    padding: 15px 0;
     
     text-align: center;
     margin-top: 30px;
