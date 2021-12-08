@@ -6,10 +6,12 @@
     <!-- Пробую игратся с адаптивом, ниже во вьюпорте вписано 1300 px - это значит что контент сайта не сожмется ниже чем 1300 px,
     это значит что контент не будет обрезаться, он будет зумироваться. Правда в определенный момент все станет не читабельным, но это маленькая победа
     хотя бы не обрезает контент, дальше буду пробовать играться с media в css -->
-    <meta name="viewport" content="1300px"> 
+    <meta name="viewport" content="device=device-width"> 
     <title>Vova`s site</title>
     <link rel="stylesheet" href="stndart.css">
     <link rel="stylesheet" href="style.css">
+    <!-- подключение адаптива css -->
+    <link rel="stylesheet" href="adaptive.css">
     <!-- Иконки с font awesome -->
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
@@ -26,6 +28,7 @@
 
         <div class="header-sticky__logo-left">
           <a href="/" class="logo-left__link"><img src="img/logoVova.jpg" class="logo-left__img" alt="Лого" srcset=""></a>
+          <a href="http://" class="logo-left__mini"><img src="ico/logo-mini0.1.png" class="logo-left__mini-img" alt="Лого" srcset=""></a>
         </div>
         <!-- End of LOGO -->
   
@@ -72,13 +75,13 @@
         </div> 
         <!-- End of slider item lambo -->
 
-        <div class="slide-show__item">  <!-- сам элемент слайдера-->
-          <img class="item__img" src="img/slide-img/corvette.jpg" alt="BMW" srcset=""> <!--сама картинка, пока что без свойства srcset-->
+        <div class="slide-show__item">  
+          <img class="item__img" src="img/slide-img/corvette.jpg" alt="BMW" srcset=""> 
         </div> 
         <!-- End of slider item corvette -->
 
-        <div class="slide-show__item">  <!-- сам элемент слайдера-->
-          <img class="item__img" src="img/slide-img/bmw.jpg" alt="BMW" srcset=""> <!--сама картинка, пока что без свойства srcset-->
+        <div class="slide-show__item">  
+          <img class="item__img" src="img/slide-img/bmw.jpg" alt="BMW" srcset=""> 
         </div> 
         <!-- End of slider item bmw -->
 

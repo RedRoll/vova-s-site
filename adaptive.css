@@ -1,0 +1,35 @@
+/* для маленьких мониторов (ноутбуков) */
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 1100px;
+    }
+    .box__btn {
+        width: 90px;
+    }
+}
+
+/* для планшетов */
+
+@media (max-width:1100px) {
+    
+    .logo-left__img {
+        display: none;
+    }
+    .logo-left__mini {
+        display: block;
+    }
+    .logo-left__mini-img {
+        width: 93px;
+        height: 100px;
+    }
+}
+
+@media (max-width:770px) {
+    .box__btn {
+        display: none;
+    }
+}
+
+/* для телефонов */
+/* в процессе... */

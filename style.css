@@ -4,9 +4,12 @@
 
 /* font-family: 'Quattrocento Sans', sans-serif;  - text */ 
 
-body {
-    min-width: 1300px;
-}
+/* body { 
+    /* при отображении на маленьких еранах контент не будет обрезаться, при достижении минимальной ширины в 1300пикс
+    он попросту начнет зумироваться 
+    min-width: 1300px; 
+} */
+
 
 
 /* WRAPPER */
@@ -37,6 +40,10 @@ body {
 .logo-left__img {
     width: 300px;
     height: 100px;
+}
+
+.logo-left__mini {
+    display: none;
 }
 
 
