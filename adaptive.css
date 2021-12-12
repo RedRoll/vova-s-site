@@ -1,6 +1,6 @@
 /* для маленьких мониторов (ноутбуков) */
 
-@media (max-width:1200px) {
+@media screen and (max-width:1200px) {
     .container {
         max-width: 1100px;
     }
@@ -11,7 +11,7 @@
 
 /* для планшетов */
 
-@media (max-width:1100px) {
+@media screen and (max-width:1100px) {
     
     .logo-left__img {
         display: none;
@@ -25,7 +25,7 @@
     }
 }
 
-@media (max-width:770px) {
+@media screen and (max-width:770px) {
     .box__btn {
         display: none;
     }
